@@ -8,7 +8,10 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "debug": "~2.6.0",
+    "entities": "^1.1.1",
     "got": "^8.0.1",
+    "he": "^1.1.1",
+    "iconv-lite": "^0.4.23",
     "line-reader": "^0.4.0",
     "lodash": "^4.17.4",
     "mongodb": "^2.2.28",

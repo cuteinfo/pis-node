@@ -11,7 +11,7 @@ bri.help  常用代码封装   以来第三方包 如 mysql
 bri.web.comm.js    public/bri.web.comm.js
 bri.convert.js    文字转换类功能
 
-global.config.js 全局加载代码
+global.js 全局加载代码
 eggjs     eggjs 框架封装
 
 使用说明
@@ -20,6 +20,13 @@ const {global,comm,convert,egg，helper，utils} = require("pis-node").bri;
 ## 常用第三方库说明
 url 系统模块
 url-parse  兼容 前后端
+
+he
+mongodb
+mongoose
+redis
+msyql
+
 
 js-beautify  格式化模块，支持js,css,html
 mongodb
@@ -62,22 +69,23 @@ Connect是一系列的中间件的集合，包括日志，session, cookie, body 
  
 vm  vm2 沙箱运行空间
 
-node网络请求
-    http  系统库
+##node网络请求
     
-    npm install request  支持https 和重定向
-    npm install r2  使用的node-fetch 为2.0 beta版，部分网站在调用clone时候导致内容丢失，要么更换依赖，要么删除 resp.clone() 的clone
-    npm install got
+http  系统库
+    
+npm install request  支持https 和重定向
+npm install r2  使用的node-fetch 为2.0 beta版，部分网站在调用clone时候导致内容丢失，要么更换依赖，要么删除 resp.clone() 的clone
+npm install got 好用
 
-    npm install node-fetch
-    npm install node-fetch-polyfill
+npm install node-fetch
+npm install node-fetch-polyfill
 
-    npm install fetch  (不推荐  github 关注人较少且代码结构不大好)
-    npm install fetch-jsonp (不推荐 github 关注人较少且代码结构不大好)
+npm install fetch  (不推荐  github 关注人较少且代码结构不大好)
+npm install fetch-jsonp (不推荐 github 关注人较少且代码结构不大好)
     
 
 
-html解析
+##html解析
     cheerio，服务端的jquery。 封装了 htmlparser2
     node-jquery  npm install jquery,还是浏览器端的代码，并没有模块化
     jsdom  npm install jsdom   JSDOM内建的解析太过于严格: JSDOM附带的HTML解析不能处理很多当下的大众的网站。
@@ -85,7 +93,7 @@ html解析
     htmlparser2 https://npm.taobao.org/package/htmlparser2
    
  
-项目
+##项目
 
 grunt 自动化工具，提高前段开发效率，支持less，sass等插件
 gulp 自动化工具，与gulp类似，语法更加像js，可以进行开发
@@ -96,7 +104,6 @@ JSHint 检查JS错误和潜在的问题
 Glue 命令行工具生成CSS
 
 打包
-
 browerify 打包node后端程序成为前段js
 webpack 新的打包工具，与browserify各有优劣
 
@@ -109,13 +116,5 @@ crypto(系统库 require('crypto').getHashes() getCiphers() )  加密
 URSA - RSA public/private key OpenSSL bindings for Node.js
 
 jade 模板
-
-## 数据库连接
-
-mongodb
-mongoose
-redis
-msyql
-
-
+ 
 
